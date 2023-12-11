@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f2;
+    overflow-y: scroll;
+}
+.banner1{
+    width: 100%;
+    height: 8%;
+    background-color: #f68b1e;
+    display: flex;
+    justify-content: space-evenly;
+}
+.banner1 h1{
+    font-size: 40px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color: white;
+    text-align: center;
+}
+.call{
+    width: 15%;
+    background-color: lightskyblue;
+    text-align: center;
+}
+.call h1{
+    font-size: 16px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color: white;
+}
+.banner2{
+    width: 100%;
+    height: 4%;
+    background-color: #f1f1f2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+.star, .star1{
+    background-color:#f68b1e ;
+    height: 20px;
+    justify-content: center;
+    width: 20px;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+}
+.banner2 a{
+    text-decoration: none;
+    color: #f68b1e;
+    cursor: pointer;
+    margin-left: 15%;
+}
+.links{
+    display: flex;
+    list-style: none;
+    right: 20%;
+    margin-right: 20%;
+
+}
+.links li{
+    margin: 15px;
+}
+.navbar{
+    height: 11%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+.navbar h2{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+     
+}
+.star1{
+    margin-right: 100px;
+}
+.search{
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+}
+.magnify{
+    height: 100%;
+    width: 10%;
+    background-color: transparent;
+    position: absolute;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    margin-left: 60px;
+    border: 0;
+}
+.ssearch{
+    height: 50%;
+    width: 5%;
+    background-color: #f68b1e;
+    color: white;
+    margin-left: 5px;
+    border: 0;
+    /* box-shadow: 5px  10% ; */
+    border-radius: 4px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+}
+.dd1, .dd2, .dd3{
+    height: 40%;
+    width: 7%;
+    background-color: blue;
+    /* position: relative; */
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+}
+.ddc, .ddl{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: pink;
+    min-width: 160px;
+    top: 100%;
+    color: black;
+}
+.dd1.active .ddc{
+    display: block;
+}
+.label{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.label h2{
+    font-size: 16px;
+    color: black;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    margin: 8px;
+}
+.sign{
+    height: 50%;
+}
+.ddcc{
+    display: flex;
+}
+.ddcc h3{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px; 
+    color: black;
+}
+.main{
+    height: 70%;
+    width: 90%;
+    background-color: white;
+    margin-top: 20px;
+    position: relative;
+    left: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+.phone{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.phone h2{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.icons{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.icons button{
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.details{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.head{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.head a{
+    background-color: #276076;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+.details p{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color:#313133;
+    font-size: 20px;
+    padding: 8px 0px 4px;
+}
+#brand{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color:#313133;
+    font-size: 14px; 
+}
+#brand a{
+    text-decoration: none;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 50%;
+}
+.inputs select{
+    margin-top: 10px;
+}
+#shipping, #ratings, #receipt{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color:#313133;
+    padding: 8px 0px 4px;
+    font-size: 12px;
+}
+.details button{
+    height: 5%;
+    width: 20%;
+    background-color: #f68b1e;
+    color: white;
+    margin-left: 5px;
+    margin-top: 30px;
+    border: 1px;
+    border-radius: 4px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+}
+.details h3{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color:#313133;
+    padding: 8px 0px 4px;
+    font-size: 12px;
+}
+.delivery{
+    background-color: white;
+    height: 100%;
+    width: 20%;
+}
+.delivery h1, h2{
+    font-size: 14px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    margin-top: 10px;
+}
+.delivery h3{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,
+    Segoe UI,Helvetica Neue,Arial,sans-serif;
+    color:#313133;
+    padding: 8px 0px 4px;
+    font-size: 12px;
+    font-weight: 200;
+}
+.delivery h3 a{
+    font-size: 16px;
+}
+.promo{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+    margin-top: 20px;   
+}
+.promo a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #264996;
+}
+.promo a:hover{
+    text-decoration: underline;
+}

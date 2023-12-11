@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>phone</title>
+  <link rel="stylesheet" href="/css/phone.css">
+ 
+</head>
+<body>
+    <div class="banner1">
+      <h1>FREE DELIVERY</h1>
+      <div class="call">
+        <h1>Call or Whatsapp to order <br> <img src="/images/whatsapp.png" alt="whatsapp img" style="height: 20px; width: 20px;"> 0711011011</h1>
+      </div>
+    </div>
+    <div class="banner2">
+      <a href="https://www.jumia.co.ke/sp-sell/"><button class="star"><i class="fa-solid fa-star " style="color: white;"></i></button>Sell on Jumia</a>
+      <ul class="links">
+        <li>FOOD</li>
+        <li>PARTY</li>
+        <li>PAY</li>
+        <li>JUMIA</li>
+      </ul>
+    </div>
+    <div class="navbar">
+      <h2>JUMIA</h2>
+      <button class="star1"><i class="fa-solid fa-star" style="color: white;"></i></button>
+      <div class="search">
+        <div class="magnify">
+          <i class="fa-solid fa-magnifying-glass" style="color: #676a6f;"></i>
+        </div>
+        <input type="text" placeholder="Search products, brands and categories" id="search">
+      </div>
+      <button class="ssearch">SEARCH</button>
+      <div class="dd1" onclick="toggleDropdown()">
+        <div class="label">
+          <i class="fa-regular fa-user" style="color: #000000; float: left;"></i>
+          <h2>Account</h2>
+          <i class="fa-solid fa-arrow-down" style="color: #000000; float: right;"></i>
+        </div>
+        <div class="ddc">
+          <div class="sign">
+            <button>SIGN IN</button>
+          </div>
+          <h3><i class="fa-regular fa-user" style="color: #000000;"></i>My Account</h3>
+          <h3><i class="fa-solid fa-store" style="color: #000000;"></i>Orders</h3>
+          <h3> <i class="fa-regular fa-heart" style="color: #000000;"></i>Saved Items</h3>
+        </div>
+      </div>
+      <div class="dd2">
+        <div class="label">
+          <i class="fa-regular fa-circle-question" style="color: #000000;"></i>
+          <h2>Help</h2>
+          <i class="fa-solid fa-arrow-down" style="color: #000000;"></i>
+        </div>
+        <div class="ddl">
+          <ul class="help-items">
+            <li><a href="">Help Centre</a></li>
+            <li><a href="">Place an Order</a></li>
+            <li><a href="">Track Your Order</a></li>
+            <li><a href=""></a>Order Cancellation</li>
+            <li><a href=""></a>Return & Refunds</li>
+            <li><a href=""></a>Payment & Jumia Account</li>
+          </ul>
+          <button><i class="fa-regular fa-message"></i>LIVE CHAT</button>
+        </div>
+      </div>
+      <div class="dd3">
+        <div class="label">
+          <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+          <h2>Cart</h2>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+        <div class="phone">
+            <img src="" alt="" height="300px" width="272px" id="image">
+            <h2>SHARE THIS PRODUCT</h2>
+            <div class="icons">
+                <button><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></button>
+                <button><i class="fa-brands fa-twitter" style="color: #000000;"></i></button>
+            </div>
+        </div>
+        <div class="details">
+            <div class="head">
+                <a href="https://www.jumia.co.ke/all-products/?tag=JMALL">Official Store</a>
+                <i class="fa-regular fa-heart" style="color: #e6931e;"></i>
+            </div>
+            <p id="name"></p>
+            <p id="brand">Brand: <a href="" id="brandName"></a></p>
+            <p id="originalPrice"><span id="discountedPrice"></span>  </p>
+            
+           <div class="inputs">
+            <input type="number" placeholder="How many?" id="quantity">
+            <select id="colors" id="colorss">
+                <option value="" disabled selected>Select an option</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="Silver">Silver</option>
+                <option value="Grey">Grey</option>
+            </select> 
+           </div>
+            <p id="shipping">+ shipping from KSh 69 to CBD - UON/Globe/Koja/River Road</p>
+            <p id="ratings">  <img src="/images/star.png" alt="" height="20px" width="20px"> 
+                <img src="/images/star.png" alt="" height="20px" width="20px"> 
+                <img src="/images/star.png" alt="" height="20px" width="20px"> 
+                <img src="/images/star.png" alt="" height="20px" width="20px"> 
+                <img src="/images/rating.png" alt="" height="20px" width="20px"> 
+            (33 verified ratings)</p>
+            <p id="receipt"></p>
+            <p id="display"></p>
+            <div class="promo">
+              <h3>PROMOTIONS</h3>
+              <a href="">Free deliveries for orders above Ksh 1999 and above in select major cities</a> <br>
+              <a href="" id="link-two">Easy and safer payments via the JumiaPay app</a> <br>
+            </div>
+            <button onclick="buyPhone()">Add to Cart <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="delivery">
+          <h1>DELIVERY & RETURNS</h1>
+          <h2>JUMIA EXPRESS</h2>
+          <h3>Express delivery in main cities. <a href="">Details</a></h3>
+          <h2>Choose your Location</h2>
+          <select name="" id="">
+              <option value="">Nairobi</option>
+              <option value="">Mombasa</option>
+              <option value="">Nyeri</option>
+              <option value="">Kiambu</option>
+              <option value="">Kisumu</option>
+              <option value="">Thika</option>
+              <option value="">Juja</option>
+              <option value="">CBD</option>
+              <option value="">Meru</option>
+              <option value="">Kakamega</option>
+          </select>
+      </div> 
+    </div>
+    <script src="/javascript/phone.js"></script>
+    <script src="/javascript/jumia.js"></script>
+    <script src="https://kit.fontawesome.com/e031dfdb29.js" 
+crossorigin="anonymous"></script>
+</body>
